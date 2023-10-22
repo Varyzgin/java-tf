@@ -1,17 +1,16 @@
 package edu.project1;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.util.Arrays;
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 class HangmanGame {
     private static final int MAX_ATTEMPTS = 5;
     private final static Logger LOGGER = LogManager.getLogger();
     private WordProvider wordProvider;
 
-    public HangmanGame(WordProvider wordProvider) {
+    HangmanGame(WordProvider wordProvider) {
         this.wordProvider = wordProvider;
     }
 
