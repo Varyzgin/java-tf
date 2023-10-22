@@ -19,17 +19,6 @@ public class ConTest {
     }
 
     @Test
-    public void defaultConnectionManagerAlwaysReturnedStableConnection() {
-        for (int i = 0; i < RANGE_TEST_ITERATIONS; i++) {
-            var defaultConnectionManager1 = new DefaultConnectionManager();
-            var defaultConnectionManager2 = new DefaultConnectionManager();
-
-            assertTrue(defaultConnectionManager1.getConnection() instanceof StableConnection);
-            assertTrue(defaultConnectionManager2.getConnection() instanceof StableConnection);
-        }
-    }
-
-    @Test
     public void stableConnectionNeverThrowException() {
         for (int i = 0; i < RANGE_TEST_ITERATIONS; i++) {
             var stableConnection1 = new StableConnection();

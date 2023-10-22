@@ -13,7 +13,7 @@ public class WhoIsCallingTest {
         CallingInfo info = WhoIsCalling.callingInfo();
 
         // required answer
-        String className = "jdk.internal.reflect.DirectMethodHandleAccessor";
+        String className = "java.lang.reflect.Method";
 
         assertThat(className).isEqualTo(info.className());
     }

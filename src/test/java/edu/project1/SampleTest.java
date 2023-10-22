@@ -1,8 +1,9 @@
 package edu.project1;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
 public class SampleTest {
+    public static void main(String[] args) {
+        WordProvider wordProvider = new DictionaryWordProvider();
+        HangmanGame game = new HangmanGame(wordProvider);
+        game.run();
+    }
 }
