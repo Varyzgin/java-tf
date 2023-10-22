@@ -3,6 +3,9 @@ package edu.hw2.task4;
 public class WhoIsCalling {
     private final static int CALLING_METHOD = 3;
 
+    private WhoIsCalling() {
+    }
+
     static CallingInfo callingInfo() {
         Throwable t = new Throwable();
         StackTraceElement[] stackTrace = t.getStackTrace();
